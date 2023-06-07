@@ -1,0 +1,562 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap');
+
+/* base styles */
+* {
+  margin: 0;
+  font-family: "Quicksand";
+  color: #333;
+}
+
+
+/* navigation bar styles */
+.navbar {
+  padding: 20px;
+  display: flex;
+  max-width: 1400px;
+  margin: 0 auto;
+  border-bottom: 1px solid #f2f2f2;
+  background-color: #ffb6c1;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 40px;
+}
+.navbar h1 {
+  color: #f1356d;
+  font-size: 35px;
+}
+.navbar .links {
+  margin-left: auto;
+  overflow: hidden;
+}
+.navbar a {
+  float: left;
+  margin-left: 25px;
+  text-decoration: none;
+  padding: 6px;
+  font-size: 25px;
+}
+.navbar a:hover {
+  color: #f1356d;
+}
+.content {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+}
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+.dropdown .dropbtn {
+  margin-top: 5px;
+  margin-left: 20px;
+  margin-right: -5px;
+  font-size: 25px;
+  border: 0;
+  background-color: inherit;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  z-index: 1;
+}
+.dropdown-content a {
+  float: none;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+.dropbtn:hover {
+  color: #f1356d;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+/* footer styles */
+.footer {
+  margin: 0 auto;
+  border-top: 1px solid #f2f2f2;
+  background-color: #ffb6c1;
+  margin-top: 20px;
+  width: 100%;
+  height: 80px;
+  text-align: center;
+  bottom: 0;
+  position: relative;
+}
+.footer .top {
+  margin-top: 15px;
+}
+
+
+
+/* saved posts page */
+.saved-posts {
+  margin: 0 auto;
+  margin-top: 100px;
+  text-align: center;
+}
+.saved-posts .posts {
+  font-size: 20px;
+  margin-top: 20px;
+}
+.saved-posts button {
+  border: 0;
+  background-color: inherit;
+}
+.saved-posts button:hover {
+  background-color: #cccccc;
+}
+
+
+/* my-sub-greddit page styles */
+.my-sub-greddit {
+  margin: 0 auto;
+  margin-top: 100px;
+}
+.my-sub-greddit h2 {
+  text-align: center;
+}
+.my-sub-greddit .grid {
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-left: 150px;
+  margin-right: 150px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 50px;
+}
+.my-sub-greddit .plus {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border: 1px solid red;
+  background-color: #f1356d;
+  color: #fff;
+  font-size: 40px;
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+}
+.my-sub-greddit .group button {
+  position: relative;
+  border: 0;
+  height: 30px;
+  width: 30px;
+  background-color: inherit;
+}
+.my-sub-greddit .group button:hover {
+  background-color: #ddd;
+}
+.my-sub-greddit .group p {
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+.sidenav {
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 80px;
+  left: 0;
+  background-color: #ffb6c1;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+.sidenav button {
+  padding: 8px 8px 4px 16px;
+  text-decoration: none;
+  font-size: 22px;
+  color: #000;
+  display: block;
+  background-color: transparent;
+  border: 0;
+}
+.sidenav button:hover {
+  color: #fff;
+  cursor: pointer;
+}
+.main {
+  margin-left: 200px;
+  padding: 0px 10px;
+  margin-top: 100px;
+}
+.main h2 {
+  text-align: center;
+}
+.main .users {
+  margin: 0 auto;
+  margin-top: 40px;
+  margin-left: 250px;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-column-gap: 250px;
+}
+.main .requests p {
+  text-align: center;
+}
+.main .requests .row {
+  margin-top: 10px;
+  margin-left: 450px;
+  width: 300px;
+}
+.main .row span {
+  color: #f1356d;
+}
+.main .row .grid {
+  display: inline;
+  float: right;
+}
+.main .row .accept-btn {
+  border: 0;
+  color: #fff;
+  margin-right: 20px;
+  background-color: #32CD32;
+}
+.main .row .accept-btn:hover {
+  color: #32CD32;
+  background-color: #fff;
+}
+.main .row .reject-btn {
+  border: 0;
+  color: #fff;
+  background-color: #d21404;
+}
+.main .row .reject-btn:hover {
+  color: #d21404;
+  background-color: #fff;
+}
+
+
+/* login page styles */
+.login {
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 100px;
+}
+.login label {
+  text-align: center;
+  display: block;
+}
+.login h2 {
+  margin-top: 150px;
+  font-size: 30px;
+  color: #f1356d;
+  margin-bottom: 30px;
+}
+.login input, .login textarea, .login select {
+  width: 100%;
+  padding: 6px 10px;
+  margin: 15px 0;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  display: block;
+}
+.login button {
+  border: 0;
+  margin-top: 10px;
+  background: #fff;
+  color: #00f;
+  font-weight: bold;
+  cursor: pointer;
+}
+.login .sub {
+  margin-top: 30px;
+  font-size: 20px;
+  background: #f1356d;
+  color: #fff;
+  border: 0;
+  padding: 8px;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 400px;
+  font-weight: bold;
+}
+.login button:disabled {
+  cursor: auto;
+  background: #cccccc;
+  color: #000;
+}
+
+
+/* home page styles */
+.home {
+  margin: 0 auto;
+  margin-top: 100px;
+}
+.home h2 {
+  text-align: center;
+  margin-top: 5px;
+}
+.home .options {
+  text-align: center;
+}
+.home .group {
+  max-width: 1000px;
+  margin-left: 200px;
+  margin-top: 40px;
+}
+.home .group p {
+  margin-top: 5px;
+}
+.home .group .tags {
+  margin-top: 5px;
+}
+.home .name {
+  border: 0;
+  font-size: 30px;
+  color: #f1356d;
+  font-weight: bold;
+  background-color: inherit;
+}
+.home .fleft {
+  float: right;
+}
+.home .fleft .able {
+  border: 0;
+  background-color: #ffb6c1;
+}
+.home .group .stats {
+  margin-top: 5px;
+}
+
+
+/* about page styles */
+.about {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 100px;
+}
+
+
+/* greddit page styles */
+.sub-greddit {
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 100px;
+  align-items: center; 
+}
+.sub-greddit .details {
+  display: grid;
+  text-align: center;
+  grid-template-columns: auto auto;
+}
+.sub-greddit img {
+  width: 250px;
+  height: 250px;
+  border-radius: 150px;
+  margin-top: 50px;
+}
+.sub-greddit .post-btn {
+  margin-top: 25px;
+  font-size: 20px;
+  background: #f1356d;
+  color: #fff;
+  border: 0;
+  padding: 8px;
+  border-radius: 10px;
+  margin-left: 10px;
+  cursor: pointer;
+  width: 200px;
+  font-weight: bold;
+}
+.sub-greddit .content {
+  margin-left: 100px;
+}
+.sub-greddit .content h2 {
+  color: #f1356d;
+}
+.sub-greddit .content p {
+  margin-top: 15px;
+  text-align: left;
+}
+.sub-greddit .content .tags {
+  margin-top: 15px;
+  text-align: left;
+}
+.sub-greddit .content .keywords {
+  margin-top: 5px;
+  text-align: left;
+}
+.sub-greddit .post-body {
+  margin-top: 25px;
+  max-width: 600px;
+  margin-left: 450px;
+}
+.sub-greddit .post-wrapper {
+  margin-top: 20px;
+}
+.sub-greddit .post-wrapper h2 {
+  color: #f1356d;
+  text-align: center;
+}
+.sub-greddit .post-wrapper button {
+  border: 0;
+  background-color: inherit;
+}
+.sub-greddit .post-wrapper button:hover {
+  background-color: #cccccc;
+}
+.sub-greddit .post-wrapper .cmt-btn {
+  color: #00f;
+  font-weight: bold;
+  cursor: pointer;
+}
+.sub-greddit .post-wrapper .follow-btn {
+  background: #f1356d;
+  color: #fff;
+  border: 0;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-left: 10px;
+}
+.sub-greddit .post-wrapper .follow-btn:hover {
+  color: #f1356d;
+  background: #fff;
+}
+.sub-greddit .post-wrapper .add-btn {
+  background: #f1356d;
+  color: #fff;
+  border: 0;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.sub-greddit .post-wrapper .add-btn:hover {
+  color: #f1356d;
+  background: #fff;
+}
+.sub-greddit .post-body {
+  background-color: #E7E9EB;
+}
+.sub-greddit .post-body p {
+  margin-top: 5px;
+  margin-left: 5px;
+}
+.sub-greddit .post-body .btext {
+  font-weight: bold;
+  margin-left: 5px;
+}
+.sub-greddit .post-body .fleft {
+  display: inline;
+  float: right;
+  margin-right: 5px;
+}
+.sub-greddit .comment-wrapper {
+  background-color: #fff;
+  margin-top: 5px;
+}
+.sub-greddit .comment-wrapper .group input {
+  width: 500px;
+  height: 25px;
+}
+.sub-greddit .comment-wrapper .group button {
+  float: right;
+  margin-right: 5px;
+}
+.sub-greddit .comments span {
+  margin-left: 5px;
+}
+.sub-greddit h4 {
+  text-align: center;
+}
+
+
+/* profile page styles */
+.profile {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 100px;
+  display: grid;
+  align-items: center; 
+  grid-template-columns: auto auto;
+}
+.profile h2 {
+  margin-top: 20px;
+}
+.profile h3 {
+  color: #f1356d;
+}
+.profile img {
+  width: 250px;
+  height: 250px;
+  border-radius: 150px;
+  margin-top: -150px;
+}
+.profile .form {
+  height: 600px;
+  width: 800px;
+  margin-top: 50px;
+} 
+.profile label {
+    height: 35px;
+    width: 200px;
+    margin-top: 10px;
+    margin-left: 10px;
+    text-align: right;
+    float:left;
+    font-size: 25px;
+}
+.profile input {
+    height: 35px;
+    width: 550px;
+    margin-top: 10px;
+}
+.profile button {
+  margin-top: 25px;
+  font-size: 20px;
+  background: #f1356d;
+  color: #fff;
+  border: 0;
+  padding: 8px;
+  border-radius: 10px;
+  margin-left: 10px;
+  cursor: pointer;
+  width: 200px;
+  font-weight: bold;
+}
+.profile button:disabled {
+  cursor: auto;
+  background: #cccccc;
+  color: #000;
+}
+.profile .saveBut {
+  margin-right: -140px;
+}
+
+
+/* Not Found page */
+.not-found {
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 100px;
+}
+.not-found h2 {
+  font-size: 30px;
+  color: #f1356d;
+  margin-bottom: 30px;
+}
+.not-found p {
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+.not-found a {
+  text-decoration: none;
+}
+.not-found button {
+  background: #f1356d;
+  color: #fff;
+  border: 0;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+}
